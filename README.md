@@ -45,6 +45,3 @@ Now you can access the raw values of enum cases conveniently using the generated
 print(Constants._appName) // Output: "App Name"
 ```
 
-## License
-
-EnumValueGeneratorMacro is released under the MIT license. See [LICENSE](LICENSE) for details.
