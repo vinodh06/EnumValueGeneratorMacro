@@ -38,7 +38,7 @@ public struct EnumValueGeneratorMacro: ExtensionMacro {
             .compactMap({ $0.elements.as(EnumCaseElementListSyntax.self)?.compactMap({ $0.as(EnumCaseElementSyntax.self) }).compactMap({ $0.name.text }) }).flatMap({ $0 })
         
         // Generate code for extension
-        let results = caseNames.map { "static let _\($0) = \(enumName).\($0).rawValue" }.joined(separator: "\n")
+        let results = caseNames.map { "public static let _\($0) = \(enumName).\($0).rawValue" }.joined(separator: "\n")
         
         // Create extension declaration
         let constantExtension = try ExtensionDeclSyntax("""
