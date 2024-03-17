@@ -8,7 +8,7 @@ You can install EnumValueGeneratorMacro via Swift Package Manager. Add the follo
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yourgithubusername/EnumValueGenerator.git", from: "1.0.0")
+    .package(url: "https://github.com/vinodh06/EnumValueGeneratorMacro.git", from: "1.0.0")
 ]
 ```
 
